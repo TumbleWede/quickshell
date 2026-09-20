@@ -9,6 +9,8 @@ TextButton {
     gradientEnd: Qt.point(width, 0)
 
     barVisible: false
+    horizontalOffset: -1
+    verticalOffset: undefined
 
     Rectangle {
         // Layout

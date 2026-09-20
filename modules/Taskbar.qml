@@ -73,6 +73,7 @@ RowLayout {
             visible: text.length > 0
             color: colText
             font.family: fontFamily
+            font.pixelSize: fontSize
 
             // Content
             text: root.truncateMiddle(root.hoveredTitle)

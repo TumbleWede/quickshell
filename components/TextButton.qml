@@ -7,6 +7,8 @@ BaseButton {
     // Parameters
     property alias text: label.text
     property var maxText: text
+    property var horizontalOffset: undefined
+    property var verticalOffset: -1
 
     // Layout
     // Use Math.round to prevent fractional pixel width
@@ -18,7 +20,8 @@ BaseButton {
 
         // Layout
         anchors.centerIn: parent
-        anchors.verticalCenterOffset: -1
+        anchors.horizontalCenterOffset: horizontalOffset
+        anchors.verticalCenterOffset: verticalOffset
 
         // Appearance
         color: colText
