@@ -13,7 +13,7 @@ TextButton {
     text: "⏻"
 
     PopupWindow {
-        id: myPopup
+        id: popup
 
         // Layout
         anchor.rect.x: 0
@@ -44,21 +44,21 @@ TextButton {
                     text: "Shutdown"
                     onClicked: {
                         Quickshell.execDetached(["systemctl", "poweroff"])
-                        powerPopup.visible = false
+                        popup.visible = false
                     }
                 }
                 PopupButton {
                     text: "Reboot"
                     onClicked: {
                         Quickshell.execDetached(["systemctl", "reboot"])
-                        powerPopup.visible = false
+                        popup.visible = false
                     }
                 }
                 PopupButton {
                     text: "Sleep"
                     onClicked: {
                         Quickshell.execDetached(["systemctl", "suspend"])
-                        powerPopup.visible = false
+                        popup.visible = false
                     }
                 }
             }
@@ -69,5 +69,5 @@ TextButton {
     }
 
     // Behavior
-    onClicked: myPopup.visible = !myPopup.visible
+    onClicked: popup.visible = !popup.visible
 }
