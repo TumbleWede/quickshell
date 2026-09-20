@@ -14,7 +14,7 @@ PanelWindow {
     property color colBorder: "#ffffff"
     property Gradient gradientSelected: Gradient {
         GradientStop { position: 0.0; color: Qt.rgba(1, 1, 1, 0) }
-        GradientStop { position: 1.0; color: Qt.rgba(1, 1, 1, 0.1) }
+        GradientStop { position: 1.0; color: Qt.rgba(1, 1, 1, 0.2) }
     }
     property string fontFamily: "JetBrainsMono Nerd Font"
     property int fontSize: 14
