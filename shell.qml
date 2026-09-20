@@ -48,6 +48,8 @@ PanelWindow {
 
         IdleInhibitorButton {}
         VolumeButton {}
+        BatteryButton { panelWindow: root }
+        BrightnessButton {}
         CalendarButton {}
         SystemMonitorButton {}
         DiscordButton {}
