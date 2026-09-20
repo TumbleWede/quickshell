@@ -8,21 +8,10 @@ TextButton {
 
     property var now: new Date()
 
-    // Layout
-    Layout.preferredWidth: Math.round(label.implicitWidth) + doublePadding
-
-    // Hidden text to keep the width fixed
-    Text {
-        id: label
-
-        visible: false
-        font.family: fontFamily
-        font.weight: weightUnselected
-
-        text: "hh:mm:ss AP ddd M/dd/yyyy"
-    }
+    maxText: "hh:mm:ss AP ddd M/dd/yyyy"
 
     text: Qt.formatDateTime(now, "h:mm:ss AP ddd M/dd/yyyy")
+
     onClicked: Quickshell.execDetached(["flatpak", "run", "org.gnome.Calendar"])
 
     Timer {

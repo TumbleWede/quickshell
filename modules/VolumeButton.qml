@@ -23,18 +23,7 @@ TextButton {
     }
 
     // Layout
-    Layout.preferredWidth: Math.round(label.implicitWidth) + doublePadding
-
-    // Hidden text to keep the width fixed
-    Text {
-        id: label
-
-        visible: false
-        font.family: fontFamily
-        font.weight: weightUnselected
-
-        text: "󰕾 99%"
-    }
+    maxText: "󰕾 99%"
 
     // Content
     text: `${icon} ${Math.round(volume * 100)}%`

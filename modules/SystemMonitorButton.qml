@@ -17,21 +17,7 @@ TextButton {
 
     // Content
     text: `C:${String(cpu).padStart(2, ' ')}% G:${String(gpu).padStart(2, '0')}% M:${String(mem).padStart(2, '0')}%`
-
-    // Layout
-    Layout.preferredWidth: Math.round(label.implicitWidth) + doublePadding
-
-    // Hidden text to keep the width fixed
-    Text {
-        id: label
-
-        visible: false
-        font.family: fontFamily
-        font.weight: weightUnselected
-
-        text: "C:99% G:99% M:99%"
-    }
-
+    maxText: "C:99% G:99% M:99%"
 
     // Behavior
     onClicked: Quickshell.execDetached(["flatpak", "run", "net.nokyan.Resources"])

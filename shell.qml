@@ -17,6 +17,7 @@ PanelWindow {
         GradientStop { position: 1.0; color: Qt.rgba(1, 1, 1, 0.1) }
     }
     property string fontFamily: "JetBrainsMono Nerd Font"
+    property int fontSize: 14
     property int transition: 300
     property int weightUnselected: 400
     property int weightSelected: 800
