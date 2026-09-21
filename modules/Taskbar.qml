@@ -40,6 +40,7 @@ RowLayout {
             Layout.preferredWidth: 24
 
             // Appearance
+            visible: modelData.title !== "Wayland to X Recording bridge — Xwayland Video Bridge"
             source: desktopEntry ? Quickshell.iconPath(desktopEntry.icon, "image-missing")
                 : Quickshell.iconPath(modelData.appId, "image-missing")
 
