@@ -46,7 +46,7 @@ PanelWindow {
 
         Spacer {}
 
-        IdleInhibitorButton {}
+        IdleInhibitorButton { panelWindow: root }
         VolumeButton {}
         BatteryButton { panelWindow: root }
         BrightnessButton {}
