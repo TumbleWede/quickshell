@@ -48,7 +48,7 @@ TextButton {
                     }
                 }
                 PopupButton {
-                    text: "Reboot"
+                    text: "Restart"
                     onClicked: {
                         Quickshell.execDetached(["systemctl", "reboot"])
                         popup.visible = false
