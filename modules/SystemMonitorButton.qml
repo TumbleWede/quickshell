@@ -16,7 +16,7 @@ TextButton {
     property real prevIdle: 0
 
     // Content
-    text: `C:${String(cpu).padStart(2, ' ')}% G:${String(gpu).padStart(2, '0')}% M:${String(mem).padStart(2, '0')}%`
+    text: `C:${String(cpu).padStart(2, '0')}% G:${String(gpu).padStart(2, '0')}% M:${String(mem).padStart(2, '0')}%`
     maxText: "C:99% G:99% M:99%"
 
     // Behavior
