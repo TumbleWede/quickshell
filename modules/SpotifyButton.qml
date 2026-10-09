@@ -51,7 +51,7 @@ TextButton {
             if (!root.spotify || !root.spotify.length || root.spotify.length <= 0) return 0
             const ratio = root.currentPosition / root.spotify.length
             // If race condition, return 0 assuming its due to song change
-            return ratio > 1 ? 0 : ratio * root.width
+            return ratio * root.width
         }
 
         // Appearance
@@ -99,6 +99,12 @@ TextButton {
         if (root.spotify && root.spotify.canTogglePlaying) {
             root.spotify.togglePlaying()
         }
+    }
+
+    onWidthChanged: {
+        root.seeking = false
+        root.seekRatio = 0
+        root.currentPosition = 0
     }
 
     Timer {
