@@ -9,7 +9,7 @@ A personal Quickshell configuration made for Hyprland on Fedora
 - SystemMonitorButton (tracks CPU, GPU, and RAM usage)
 
 # Dependencies
-- Recourses Flatpak (for SystemMonitorButton onClicked)
+- Resources Flatpak (for SystemMonitorButton onClicked)
 - GNOME Calendar Flatpak (for CalendarButton onClicked)
 - Vesktop (for DiscordButton functionality)
 - JetBrainsMono Nerd Font (for fontFamily)
