@@ -7,7 +7,7 @@ TextButton {
     id: root
 
     // Variables
-    property string playerIcon: ""  // your spotify glyph, hardcoded since you only have one entry
+    property string playerIcon: "󰓇"  // your spotify glyph, hardcoded since you only have one entry
     property string pausedIcon: "󰏤"
     property var spotify: Mpris.players.values.find(p => p.identity === "Spotifast" || p.identity === "Spotify")
     property real currentPosition: 0
