@@ -35,9 +35,9 @@ RowLayout {
 
             onClicked: (mouse) => {
                 if (mouse.button === Qt.LeftButton) {
-                    menuAnchor.open()
-                } else if (mouse.button === Qt.RightButton) {
                     modelData.activate()
+                } else if (mouse.button === Qt.RightButton) {
+                    menuAnchor.open()
                 } else if (mouse.button === Qt.MiddleButton) {
                     modelData.secondaryActivate()
                 }
